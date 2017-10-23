@@ -1,0 +1,25 @@
+<head><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"></head>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- <button class="btn btn-success" routerLink="new">New Recipe</button> -->
+    <button class="btn btn-success" (click)="tonew()">New Recipe</button>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+      <!-- <a href="#" class="list-group-item clearfix" *ngFor="let r of recipes">
+        <div class="pull-left">
+          <h4 class="list-group-item-heading">{{r.name}}</h4>
+          <p class="list-group-item-text">{{r.desc}}</p>
+        </div>
+        <span class="pull-right">
+        <img class="img-responsive" src="{{r.img}}" alt="" style="max-height:80px"> 
+        </span>
+      </a>
+
+       <app-recipeitem *ngFor="let r of recipes" [element]="r" (show)="onShowDetails(r)"></app-recipeitem>
+     -->
+    <app-recipeitem *ngFor="let r of recipes;let i=index" [element]="r" [index]="i"></app-recipeitem>
+  </div>
+</div>

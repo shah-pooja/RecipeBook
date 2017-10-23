@@ -1,0 +1,14 @@
+<head><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"></head>
+
+<div class="row">
+  <div class="col-xs-10">
+    <!-- <app-shoppingedit (shopping)="onAdded($event)"></app-shoppingedit> -->
+    <app-shoppingedit></app-shoppingedit>
+      <hr>
+    <ul class="list-group">
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let i of ingredients">
+        {{i.name}} ({{i.amount}})
+      </a>
+    </ul>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<head><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"></head>
+<app-header (option)="onNavigate($event)"></app-header>
+<h1>Welcome to app</h1>
+<div class="container">
+  <router-outlet></router-outlet>
+<!-- <app-recipe *ngIf="option === 'recipe'"></app-recipe>
+<app-shopping *ngIf="option === 'shopping'"></app-shopping> -->
+</div>
+
+<!-- <button type="button" (click)="show=!show" >Click</button>
+<div *ngIf="show">
+  <p [ngClass]="{odd:true}">
+      <li *ngFor="let no of odd">{{no}}</li>
+  </p>
+</div> -->
+<!-- <div *appUnless="show">
+  <p [ngClass]="{odd:true}">
+      <li *ngFor="let no of odd">{{no}}</li>
+  </p>
+</div> 
+<div *ngIf="show">
+  <p [ngClass]="{even:true}">
+      <li *ngFor="let no of even">{{no}}</li>
+  </p>
+</div>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="5">value is 5</p>
+  <p *ngSwitchCase="10">value is 10</p>
+  <p *ngSwitchCase="100">value is 100</p>
+  <p *ngSwitchDefault>value is Default</p>
+</div>
+<p appPracdirective>hello</p> -->

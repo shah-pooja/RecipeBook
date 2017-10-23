@@ -1,0 +1,12 @@
+<head><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"></head>
+<div class="row">
+  <div class="col-md-5">
+      <!-- <app-recipelist (itemdetails)="itemshow=$event"></app-recipelist> -->
+      <app-recipelist></app-recipelist>
+  </div>
+  <div class="col-md-7">
+       <!-- <app-recipedetails *ngIf="itemshow ;else showtext" [recipe]="itemshow"></app-recipedetails> -->
+      <!-- <ng-template #showtext> <p>Select one recipe</p> </ng-template>  -->
+      <router-outlet></router-outlet>  
+  </div>
+</div>

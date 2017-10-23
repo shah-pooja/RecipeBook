@@ -1,0 +1,23 @@
+<head><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"></head>
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          Name<input type="text" id="name" class="form-control" #shoppingname>
+        </div>
+        <div class="col-sm-2 form-group">
+          Amount<input type="number"  id="amount"class="form-control" #shoppingamount>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success" type="button" (click)="onAdd()">Add</button>
+            <button class="btn btn-danger" type="button">Delete</button>
+            <button class="btn btn-danger" type="button">Clear</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>
+            
